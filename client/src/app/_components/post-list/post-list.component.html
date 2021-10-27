@@ -1,0 +1,8 @@
+<div class="row align-items-start">
+    <app-post-item
+        class="item"
+        *ngFor="let post of posts" 
+        [post]="post"
+        (onDeletePost)="deletePost(post)">
+    </app-post-item>
+</div>
